@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
+    body {
+        background-color: rgb(17, 17, 17);
+    }
+
+    .Sidebar{
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        background-color: rgb(10, 10, 10);
+        width: 25%;
+        height: 100%;
+         z-index: -100;
+    }
+
+    .ProfilePic{
+        display: flex;
+        justify-content: center; /* horizontal centering */
+        margin-top: 5%;
+        z-index: 0;
+    }
+
+    .Title{
+        display: flex;
+        justify-content: center; /* horizontal centering */
+        color: #f5deb3;
+        font-family: "Orbitron", sans-serif;
+    }
+
+    .SubTitle{
+        display: flex;
+        justify-content: center; /* horizontal centering */
+        color: #f5deb3;
+        font-family: "Gruppo", sans-serif;
+    }    
+
+    .ButtonSidebarWrapper
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center; 
+        margin-top: 30%;
+    }
+    .ButtonSidebar
+    {
+        display: block;
+        background: transparent;
+        color: #f5deb3;
+        font-size: 15px;
+        border: none;        /* optional: remove border */
+        box-shadow: none;    /* optional: remove shadow if any */
+        text-align: left;
+        height: 30%;
+        width: 35%;
+
+        cursor: pointer;
+    }
+
+    .OpenAreaWrapper{
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 25%;
+        width: 75%;
+        height: 100%;
+        z-index: -90;
+    }
+
+    .ContentBox
+    {
+        margin: 1%;
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        background-color: rgb(29, 29, 29);
+        width: 30%;
+        height: 45%;
+        border: 1px solid #f5deb3; 
+        border-radius: 20px;
+        z-index: -10;
+    }
+
+    .ContentBoxImage
+    {
+        display: flex;
+        align-items: center; /* horizontal centering */
+        justify-content: center;
+        width: 100%;
+        height: 70%;
+        border-radius: 20px;
+        overflow: hidden;   
+    }
+
+    .ContentBoxHeader{
+        display: flex;
+        justify-content: left; /* horizontal centering */
+        margin-top: 7%;
+        margin-left: 5%;
+        color: #f5deb3;
+        font-family: "Gruppo", sans-serif;
+        font-size: 25px;
+    }
+
+    .TagsWrapper{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        flex-direction: row; /* row for horizontal */
+        gap: 0px;
+        flex-wrap: wrap; /* wrap to next line if needed */
+    }
+
+    .TagText{
+        margin-left: 5%;
+        position: relative;
+        color: #f5deb3;
+        background-color: rgb(17, 17, 17);
+        border: 1px solid #f5deb3; 
+        border-radius: 20px;
+        font-family: "Gruppo", sans-serif;
+        font-size:  85%;
+        width: 25%;
+        height: 25%;
+        text-align: center;
+    }
+    
