@@ -2,21 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap');
 
     body {
+        display: flex;
+        margin: 0%;
         background-color: rgb(17, 17, 17);
     }
 
     .Sidebar{
-        position: absolute;
-        object-fit: cover;
-        top: 0;
-        left: 0;
+        position: sticky;
+        width: 25vw;
+        height: 100vh;
+        z-index: -100;
         background-color: rgb(10, 10, 10);
-        width: 25%;
-        height: 100%;
-         z-index: -100;
     }
 
     .ProfilePic{
+        position: sticky;
+        width: 25vw;
+        height: 25vh;
         display: flex;
         justify-content: center; /* horizontal centering */
         margin-top: 5%;
@@ -28,6 +30,8 @@
         justify-content: center; /* horizontal centering */
         color: #f5deb3;
         font-family: "Orbitron", sans-serif;
+        font-size: 3vw;
+        font-size: 3vh;  
     }
 
     .SubTitle{
@@ -35,28 +39,34 @@
         justify-content: center; /* horizontal centering */
         color: #f5deb3;
         font-family: "Gruppo", sans-serif;
+        font-size: 3vw;
+        font-size: 3vh;  
     }    
 
     .ButtonSidebarWrapper
     {
         display: flex;
+        position: sticky;
         flex-direction: column;
-        gap: 20px;
+        gap: 5vw;
+        gap: 3vh;
         align-items: center; 
         margin-top: 30%;
+        width: 25vw;
+        height: 25vh;  
     }
     .ButtonSidebar
     {
         display: block;
         background: transparent;
         color: #f5deb3;
-        font-size: 15px;
+        font-size: 2vw;
+        font-size: 2svh;
         border: none;        /* optional: remove border */
         box-shadow: none;    /* optional: remove shadow if any */
         text-align: left;
-        height: 30%;
-        width: 35%;
-
+        height: 2vw;
+        width: 25vh;
         cursor: pointer;
     }
 
