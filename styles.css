@@ -2,17 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap');
 
     body {
-        display: flex;
+        display: grid;
+        align-items: start;
         margin: 0%;
         background-color: rgb(17, 17, 17);
+        grid-template-columns: 25vw 1fr;
     }
 
     .Sidebar{
         position: sticky;
+        top: 0;
         width: 25vw;
         height: 100vh;
-        z-index: -100;
+        align-self: start;
         background-color: rgb(10, 10, 10);
+        z-index: 0;
     }
 
     .ProfilePic{
@@ -60,8 +64,7 @@
         display: block;
         background: transparent;
         color: #f5deb3;
-        font-size: 2vw;
-        font-size: 2svh;
+        font-size: 2vh;
         border: none;        /* optional: remove border */
         box-shadow: none;    /* optional: remove shadow if any */
         text-align: left;
@@ -71,27 +74,30 @@
     }
 
     .OpenAreaWrapper{
-        position: absolute;
+        display: flex;
+        position: relative;
+        justify-content: left;
         object-fit: cover;
         top: 0;
-        left: 25%;
-        width: 75%;
-        height: 100%;
-        z-index: -90;
+        width: 75vw;
+        height: 100vh;
+        overflow-y: auto;
+        z-index: 0;
+        flex-wrap: wrap; /* wrap to next line if needed */
     }
 
     .ContentBox
     {
         margin: 1%;
-        position: absolute;
+        position: relative;
         object-fit: cover;
         top: 0;
         left: 0;
         background-color: rgb(29, 29, 29);
-        width: 30%;
-        height: 45%;
-        border: 1px solid #f5deb3; 
-        border-radius: 20px;
+        width: 23vw;
+        height: 50vh;
+        border: 0.1vh solid #f5deb3; 
+        border-radius: 2vh;
         z-index: -10;
     }
 
@@ -100,42 +106,42 @@
         display: flex;
         align-items: center; /* horizontal centering */
         justify-content: center;
-        width: 100%;
-        height: 70%;
-        border-radius: 20px;
+        width: 23vw;
+        height: 35vh;
+        border-radius: 2vh;
         overflow: hidden;   
     }
 
     .ContentBoxHeader{
         display: flex;
         justify-content: left; /* horizontal centering */
-        margin-top: 7%;
-        margin-left: 5%;
+        margin-top: 4vh;
+        margin-left: 1vw;
         color: #f5deb3;
         font-family: "Gruppo", sans-serif;
-        font-size: 25px;
+        font-size: 3vh;
     }
 
     .TagsWrapper{
-        width: 100%;
-        height: 15%;
+        width: 23vw;
+        height: 7vh;
         display: flex;
         flex-direction: row; /* row for horizontal */
-        gap: 0px;
+        gap: 0vh;
         flex-wrap: wrap; /* wrap to next line if needed */
     }
 
     .TagText{
-        margin-left: 5%;
+        margin-left: 0.9vw;
         position: relative;
         color: #f5deb3;
         background-color: rgb(17, 17, 17);
-        border: 1px solid #f5deb3; 
-        border-radius: 20px;
+        border: 0.1vh solid #f5deb3; 
+        border-radius: 3vh;
         font-family: "Gruppo", sans-serif;
-        font-size:  85%;
-        width: 25%;
-        height: 25%;
+        font-size:  1.7vh;
+        width: 6vw;
+        height: 1.8vh;
         text-align: center;
     }
     
