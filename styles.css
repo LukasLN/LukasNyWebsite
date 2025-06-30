@@ -1,6 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&display=swap');
 
+    ::-webkit-scrollbar{
+        display: inline;
+        width: 1em;
+        overflow: overlay;
+    }
+
+    ::-webkit-scrollbar-track{
+        background-color: #f5deb3;
+        border: 0.1vh solid rgb(10, 10, 10);
+        border-radius: 5vh;
+        margin: 0.1em;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color: rgb(10, 10, 10);
+        border: 0.3vh solid #f5deb3;
+        border-radius: 5vh;
+    }
+
+
     body {
         display: grid;
         align-items: start;
