@@ -108,10 +108,11 @@
         display: flex;
         align-items: center; /* horizontal centering */
         justify-content: center;
-        width: 23vw;
+        width: 100%; /* makes image fit container width */
         height: 35vh;
         border-radius: 2vh;
-        overflow: hidden;   
+        overflow: clip;   
+        z-index: 1;
     }
 
     .ContentBoxHeader{
