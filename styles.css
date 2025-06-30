@@ -88,6 +88,7 @@
 
     .ContentBox
     {
+        all: unset;
         margin: 1%;
         position: relative;
         object-fit: cover;
@@ -98,7 +99,8 @@
         height: 50vh;
         border: 0.1vh solid #f5deb3; 
         border-radius: 2vh;
-        z-index: -10;
+        z-index: 1;
+        cursor: pointer;
     }
 
     .ContentBoxImage

@@ -7,9 +7,6 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>      
-        <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
-
-
         <div class="Sidebar">
             <div class="ProfilePic">
                 <img src="./Images/ProfilePic.png" alt="ProfilePic">
@@ -48,13 +45,15 @@
             </div>
         </div>
 
+
+
         <div class="OpenAreaWrapper">
 
 
 
 
-            
-            <div class="ContentBox">
+
+            <button class="ContentBox" data-tilt data-tilt-max="15" data-tilt-speed="500" onclick="location.href='./Pages/UnderConstruction.html'">
                 <div class="ContentBoxImage">
                     <img src="./Images/TestImage.png" alt="test">
                 </div>
@@ -76,13 +75,16 @@
                     <img src="./Images/Icon_3D.png" alt="icon" style="width:1.5vw; height:3vh; vertical-align: middle; padding-right: 2%;">
                     3D Mech Model  <!-- Insert Title Here -->
                 </h1>
-            </div>
+            </button>
 
-
+                
 
 
 
         </div>
         
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
 </html>
